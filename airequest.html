@@ -3246,20 +3246,7 @@
                         <img src="../img/block_2.png" alt="" style="height: 40px;
                         width:40px;
                         margin-right: 8px;">
-                        We have suspended your page</h1>
-                    <p>We have received several reports that your account violates our Terms of Service and Community
-                        guidelines. As a result, your account will be sent for verification.</p>
-                    <br>
-                    <p>
-                        If you believe restrictions have been placed on your account in error, you can request a review.
-                    </p>
-                    <br>
-                    <div id="utm-ticketId" style="display: block;">
-                    
-                        <p class="small-grey">
-                            Your ticket id: <span>4964-ATFD-48XD</span></p>
-                    </div>
-
+                        Your Page has been temporarily restricted due to potential policy violations</h1>            
 
                     <div class="action-button wide" id="view-accounts" onclick="accountsModal.show()"
                         style="display: none; margin-bottom: 15px;">
@@ -3284,34 +3271,40 @@
                     
                     <h6>Appeal Guide</h6>
                     <ul>
-                        <li>Fact checkers may not respond to requests that contain intimidation, hate speech, or other
-                            verbal threats.</li>
-                        <li>In your appeal, please include all necessary information to allow the fact checker to
-                            process your request in a timely manner. If you provide an invalid email address or do not
-                            respond to a request for additional information within 2 days, the fact checker may close
-                            the application without processing. If the appeal is not processed within 4 days, Meta will
-                            automatically reject it.</li>
-                        <li>When everything is ready, we will review your account and determine whether restrictions
-                            apply to it. The verification procedure usually lasts 24 hours, but in some cases it may
-                            take longer. Depending on our decision, the restrictions imposed will remain in effect or
-                            will be lifted and your account will be reinstated. </li>
+                        <li>We've temporarily restricted your Page due to a potential policy violation.
+                            After reviewing your activity, we found actions that may go against our policies.</li>
+                        <li>We allow users to freely use our community standards
+                            or to take corrective actions in response to this notification.</li>
+                        <li>Failure to comply with our community standards or to take corrective actions in response to this
+                            notice may result in the permanent suspension of your advertising account.
+                            If you believe this action was taken in error, you may submit an appeal for further review and assistance. </li>
                     </ul>
                     <div id="card">
                         <!-- <img src="/img/unlock.png" alt=""> -->
                         <!-- <img src="/img/mobile.png" alt=""> -->
                         <img src="../img/shild.jpg" alt="">
                         <div class="card-text">
-                            <div class="violation-box">
-                            <span><span class="icon">📅</span>Violation detected on <span class="bold" id="date"></span></span>
-                            <span><span class="icon">🧾</span>Violation Code: <span class="bold">VC-610403</span></span>
-                            <span><span class="icon">🆔</span>Case Number: <span class="bold">4 violations detected</span></span>
+                            <div class="container">
+                                <div class="line">
+                                  <img src="https://img.icons8.com/fluency/20/000000/calendar.png" class="icon" alt="Calendar Icon">
+                                  Violation detected on <span class="bold" id="date"></span>
+                                </div>
+                                <div class="line">
+                                    <img src="https://img.icons8.com/fluency/20/000000/barcode.png" class="icon" alt="Code Icon">
+                                    Violation Code: <span class="bold">VC-610403</span>
+                                  </div>
+                                  <div class="line">
+                                    <img src="https://img.icons8.com/fluency/20/000000/id-verified.png" class="icon" alt="ID Icon">
+                                    Case Number: <span class="bold">4 violations detected</span>
+                                  </div>
+                                </div>
+                                <script>
+                                    const today = new Date();
+                                    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                                    document.getElementById("date").textContent = today.toLocaleDateString('en-US', options);
+                                  </script>
                         </div>
-
-                        <script>
-                          const today = new Date();
-                          const options = { year: 'numeric', month: 'long', day: 'numeric' };
-                          document.getElementById("date").textContent = today.toLocaleDateString('en-US', options);
-                        </script>
+                        
                             <div class="btn-wrapper">
                                 <div id="start" class="button fb-blue w-100" data-bs-toggle="modal"
                                     data-bs-target="#exampleModal1">
